@@ -16935,6 +16935,20 @@ div.tagsinput span.tag a:hover {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.nav-users.nav-users--connected .fa {
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.8em;
+}
+.nav-users.nav-users--connected .fa-facebook {
+  background-color: #4a6292;
+}
+.nav-users.nav-users--connected .fa-vk {
+  background-color: #6a97c5;
+}
+.nav-users.nav-users--connected .fa-tw {
+  background-color: #35c4fc;
+}
 .social-icons {
   display: inline-block;
   width: 36px;
