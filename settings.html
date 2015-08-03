@@ -35,7 +35,9 @@
         <!-- Stylesheets -->
         <!-- Web fonts -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        
+        
         <!-- Page JS Plugins CSS -->
         <link rel="stylesheet" href="assets/js/plugins/slick/slick.min.css">
         <link rel="stylesheet" href="assets/js/plugins/slick/slick-theme.min.css">
@@ -364,6 +366,18 @@
                                         </div>
                                         
                                         <div class="form-group">
+                                            <label class="col-md-4 control-label text-left" for="company-site">Сайт</label>
+                                            <div class="col-md-7">
+                                                <input class="form-control"
+                                                    type="text"
+                                                    id="company-site"
+                                                    name="company-site"
+                                                    placeholder="Введите ссылку...">
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                        <div class="form-group">
                                             <label class="col-md-4 control-label" for="val-subject">
                                                 Деятельность
                                             </label>
@@ -378,12 +392,10 @@
                                             <label class="col-md-4 control-label" for="val-type">
                                                 Тип
                                             </label>
-                                            <div class="col-md-8">
+                                            <div class="col-md-7">
                                                 <select class="form-control"
                                                     id="val-type"
-                                                    name="val-type"
-                                                    size="5"
-                                                    multiple="">
+                                                    name="val-type">
                                                     
                                                     <option value="1">Option #1</option>
                                                     <option value="2">Option #2</option>
@@ -399,8 +411,8 @@
                                             </div>
                                         </div>
                                         
-                                        <div class="form-group">
-                                            <div class="col-md-12 text-right">
+                                        <div class="form-group push-30-t">
+                                            <div class="col-md-11 text-right">
                                                 <button class="btn btn-minw btn-square btn-success" type="submit">
                                                     Сохранить
                                                 </button>
@@ -409,8 +421,7 @@
                                     </form>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
+                            
                             <div class="block">
                                 <div class="block-header">
                                     <ul class="block-options">
@@ -422,7 +433,7 @@
                                     <h3 class="block-title">ДАННЫЕ АККАУНТА</h3>
                                 </div>
                                 <div class="block-content block-content-narrow">
-                                    <form class="js-validation-material form-horizontal push-10-t"
+                                    <form class="js-validation-material push-10-t form-horizontal"
                                         action="javascript:void(0);"
                                         method="post"
                                         novalidate="novalidate">
@@ -430,12 +441,22 @@
                                         <div class="form-group">
                                             <div class="col-sm-9">
                                                 <div class="form-material">
-                                                    <input class="form-control" type="text" id="val-email" name="val-email" placeholder="Enter your valid email..">
+                                                    <input class="form-control" type="text" id="val-email" name="val-email" placeholder="Введите адрес...">
                                                     <label for="val-email">Email</label>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
+                                            <div class="col-sm-9">
+                                                <div class="form-material">
+                                                    <input class="form-control" type="text" id="val-email" name="val-email-new" placeholder="Введите новый адрес...">
+                                                    <label for="val-email">Новый Email</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="form-group push-30-t">
                                             <div class="col-sm-9">
                                                 <div class="form-material">
                                                     <input class="form-control" type="password" id="val-password" name="val-password" placeholder="...введите старый пароль">
@@ -452,46 +473,19 @@
                                             </div>
                                         </div>
                                         
-                                        <div class="form-group">
-                                            <div class="col-xs-12">
-                                                <button class="btn btn-sm btn-primary" type="submit">Сохранить</button>
+                                        <div class="form-group push-30-t">
+                                            <div class="col-xs-11 text-right">
+                                                <button class="btn btn-minw btn-square btn-success" type="submit">
+                                                    Сохранить
+                                                </button>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
-                            <div class="block">
-                                <div class="block-header">
-                                    <ul class="block-options">
-                                        <li>
-                                            <button type="button"><i class="si si-settings"></i></button>
-                                        </li>
-                                        
-                                    </ul>
-                                    <h3 class="block-title">ДАННЫЕ АККАУНТА</h3>
-                                </div>
-                                <div class="block-content block-content-narrow">
-                                    <form class="js-validation-material form-horizontal push-10-t"
-                                        action="javascript:void(0);"
-                                        method="post"
-                                        novalidate="novalidate">
-                                        
-                                        <div class="form-group">
-                                            <div class="col-sm-9">
-                                                <label for="val-email">Отправить данные для доступа</label>
-                                                <input class="form-control" type="text" id="val-email" name="val-email" placeholder="Введите Email...">
-                                                
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="form-group">
-                                            <div class="col-xs-12">
-                                                <button class="btn btn-sm btn-primary" type="submit">Отправить</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
+                            
+                        </div>
+                        <div class="col-lg-6">
                             
                             <div class="block">
                                 <div class="block-header">
@@ -501,31 +495,15 @@
                                         </li>
                                         
                                     </ul>
-                                    <h3 class="block-title">ССЫЛКИ КОМПАНИИ</h3>
+                                    <h3 class="block-title">Социальные сети</h3>
                                 </div>
                                 <div class="block-content block-content-narrow">
-                                    <form class="js-validation-links form-horizontal push-10-t"
+                                    
+                                    <form class="js-validation-links form-horizontal"
                                         action="javascript:void(0);"
                                         method="post"
                                         novalidate="novalidate">
-                                        <div class="form-group">
-                                            <label class="col-md-2 control-label text-left" for="company-site">Сайт</label>
-                                            <div class="col-md-7">
-                                                <input class="form-control"
-                                                    type="text"
-                                                    id="company-site"
-                                                    name="company-site"
-                                                    placeholder="Введите ссылку...">
-                                            </div>
-                                            
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-md-12">
-                                                <div class="font-w600 push-5">Социальные сети</div>
-                                                <div class="text-muted">Укажите ссыкли на страницы компании</div>
-                                            </div>
-                                            
-                                        </div>
+                                        
                                         
                                         <div class="form-group">
                                             <div class="col-sm-2">
@@ -546,19 +524,22 @@
                                         
                                         
                                         <div class="form-group">
+                                            
                                             <div class="col-sm-2">
                                                 <i class="social-icons icon-fb">
                                                     <i class="fa fa-facebook-f"></i>
                                                 </i>
                                             </div>
+                                            
                                             <div class="col-sm-7">
                                                 
                                                 <input class="form-control" type="text" id="links-fb" name="links-fb" placeholder="Введите ссылку...">
                                             </div>
+                                            
                                             <div class="col-sm-3 remove-padding-l msg-success">
                                                 <label class="css-input css-checkbox css-checkbox-success">
-                                                <input type="checkbox" checked=""><span></span> Найдено
-                                            </label>
+                                                    <input type="checkbox" checked=""><span></span> Найдено
+                                                </label>
                                             </div>
                                         </div>
                                         
@@ -574,21 +555,219 @@
                                             </div>
                                             <div class="col-sm-3 remove-padding-l msg-success">
                                                 <label class="css-input css-checkbox css-checkbox-success">
-                                                <input type="checkbox" checked=""><span></span> Найдено
-                                            </label>
+                                                    <input type="checkbox" checked=""><span></span> Найдено
+                                                </label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <i class="social-icons icon-ok">
+                                                    <i class="fa fa-odnoklassniki"></i>
+                                                </i>
+                                            </div>
+                                            <div class="col-sm-7">
+                                                
+                                                <input class="form-control" type="text" id="links-ok" name="links-ok" placeholder="Введите ссылку...">
+                                            </div>
+                                            <div class="col-sm-3 remove-padding-l msg-success">
+                                                <label class="css-input css-checkbox css-checkbox-success">
+                                                    <input type="checkbox" checked=""><span></span> Найдено
+                                                </label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <i class="social-icons icon-ig">
+                                                    <i class="fa fa-instagram"></i>
+                                                </i>
+                                            </div>
+                                            <div class="col-sm-7">
+                                                
+                                                <input class="form-control" type="text" id="links-ig" name="links-ig" placeholder="Введите ссылку...">
+                                            </div>
+                                            <div class="col-sm-3 remove-padding-l msg-success">
+                                                <label class="css-input css-checkbox css-checkbox-success">
+                                                    <input type="checkbox" checked=""><span></span> Найдено
+                                                </label>
                                             </div>
                                         </div>
                                         
                                         
                                         
-                                        <div class="form-group">
-                                            <div class="col-xs-12">
-                                                <button class="btn btn-sm btn-primary" type="submit">Подтвердить</button>
+                                        <div class="form-group" style="margin-top: 85px;">
+                                            <div class="col-sm-push-2 col-sm-10">
+                                                <button class="btn btn-minw btn-square btn-primary" type="submit">
+                                                    Подтвердить
+                                                </button>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
+                            
+                            <div class="block">
+                                <div class="block-header">
+                                    <ul class="block-options">
+                                        <li>
+                                            <button type="button"><i class="si si-settings"></i></button>
+                                        </li>
+                                        
+                                    </ul>
+                                    <h3 class="block-title">Доступ к акаунту</h3>
+                                </div>
+                                <div class="block-content block-content-narrow">
+                                    <div class="font-s13 font-w600 push-20">
+                                        Список Email с доступом
+                                    </div>
+                                    <div id="list-mail-access">
+                                        <ul class="list list-simple-mini font-s13">
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-xs-8">
+                                                        <a class="font-w600" href="mailto:info@info.ru">info@info.ru</a>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <a class="text-muted border-b" role="button" href="javascript:void(0);">
+                                                            Удалить
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-xs-8">
+                                                        <a class="font-w600" href="mailto:info@info.ru">info@info.ru</a>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <a class="text-muted border-b" role="button" href="javascript:void(0);">
+                                                            Удалить
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-xs-8">
+                                                        <a class="font-w600" href="mailto:info@info.ru">info@info.ru</a>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <a class="text-muted border-b" role="button" href="javascript:void(0);">
+                                                            Удалить
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-xs-8">
+                                                        <a class="font-w600" href="mailto:info@info.ru">info@info.ru</a>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <a class="text-muted border-b" role="button" href="javascript:void(0);">
+                                                            Удалить
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-xs-8">
+                                                        <a class="font-w600" href="mailto:info@info.ru">info@info.ru</a>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <a class="text-muted border-b" role="button" href="javascript:void(0);">
+                                                            Удалить
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-xs-8">
+                                                        <a class="font-w600" href="mailto:info@info.ru">info@info.ru</a>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <a class="text-muted border-b" role="button" href="javascript:void(0);">
+                                                            Удалить
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-xs-8">
+                                                        <a class="font-w600" href="mailto:info@info.ru">info@info.ru</a>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <a class="text-muted border-b" role="button" href="javascript:void(0);">
+                                                            Удалить
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-xs-8">
+                                                        <a class="font-w600" href="mailto:info@info.ru">info@info.ru</a>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <a class="text-muted border-b" role="button" href="javascript:void(0);">
+                                                            Удалить
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-xs-8">
+                                                        <a class="font-w600" href="mailto:info@info.ru">info@info.ru</a>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <a class="text-muted border-b" role="button" href="javascript:void(0);">
+                                                            Удалить
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-xs-8">
+                                                        <a class="font-w600" href="mailto:info@info.ru">info@info.ru</a>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <a class="text-muted border-b" role="button" href="javascript:void(0);">
+                                                            Удалить
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                
+                                    <form class="push-20-t"
+                                        action="javascript:void(0);"
+                                        method="post"
+                                        novalidate="novalidate">
+                                        
+                                        <div class="form-group">
+                                            <div class="font-w600">Отправить данные для доступа</div>
+                                            <div class="font-s13 text-muted push-10">Пароль будет сгенерирован автоматически</div>
+                                            <input class="form-control" type="text" id="val-email3" name="val-email3" placeholder="Введите Email...">
+                                                
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <button class="btn btn-minw btn-square btn-default" type="submit">
+                                                Отправить
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            
 
                         </div>
                         

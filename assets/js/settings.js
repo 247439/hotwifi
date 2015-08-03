@@ -139,4 +139,18 @@ var BaseFormValidation = function() {
 }();
 
 // Initialize when page loads
-jQuery(function(){ BaseFormValidation.init(); });
+jQuery(function() {
+    BaseFormValidation.init();
+    $('#list-mail-access')
+        .slimScroll({
+            height: 165,
+            color: '#000',
+            size: '5px',
+            opacity : .15,
+            wheelStep : 15,
+            distance : '2px',
+            visible: true,
+            // railOpacity: 0.35
+        })
+        .scrollLock();
+});
