@@ -8,33 +8,36 @@ var BaseTableDatatables = function() {
     // Init full DataTable, for more examples you can check out https://www.datatables.net/
     var initDataTableFull = function() {
         jQuery('.js-dataTable-full').dataTable({
-            columnDefs: [ { orderable: false, targets: [ 4 ] } ],
+            // columnDefs: [ { orderable: false, targets: [ 4 ] } ],
             pageLength: 10,
-            lengthMenu: [[5, 10, 15, 20], [5, 10, 15, 20]]
+            lengthMenu: [[5,  10, 15, 20], [5, 10, 15, 20]]
         });
+        
+        $('.js-users-dropdown').html($('#users-dropdown'));  
     };
-
+    
     // DataTables Bootstrap integration
     var bsDataTables = function() {
         var $DataTable = jQuery.fn.dataTable;
+        
 
         // Set the defaults for DataTables init
         jQuery.extend( true, $DataTable.defaults, {
             dom:
-                "<'row'<'col-sm-8'<'row'<'col-sm-6'l><'col-sm-6'f>>><'col-sm-4'>>" +
+                "<'row'<'col-sm-6'l><'col-sm-6' <'js-users-dropdown'> >>" +
                 "<'row'<'col-sm-12'tr>>" +
                 "<'row'<'col-sm-6'i><'col-sm-6'p>>",
             renderer: 'bootstrap',
             oLanguage: {
                 sLengthMenu: "_MENU_",
-                sInfo: "Showing <strong>_START_</strong>-<strong>_END_</strong> of <strong>_TOTAL_</strong>",
+                sInfo: "Показано <strong>_START_</strong>-<strong>_END_</strong> из <strong>_TOTAL_</strong>",
                 oPaginate: {
                     sPrevious: '<i class="fa fa-angle-left"></i>',
                     sNext: '<i class="fa fa-angle-right"></i>'
                 }
             }
         });
-
+        
         // Default class modification
         jQuery.extend($DataTable.ext.classes, {
             sWrapper: "dataTables_wrapper form-inline dt-bootstrap",

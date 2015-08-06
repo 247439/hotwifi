@@ -306,7 +306,7 @@
                     <div class="row items-push">
                         <div class="col-sm-7">
                             <h1 class="page-heading">
-                                Список пользователей 
+                                 Контакты компании
                             </h1>
                         </div>
                         <div class="col-sm-5 text-right hidden-xs">
@@ -320,33 +320,40 @@
                 <!-- END Page Header -->
 
                 <!-- Stats -->
-                <div class="content content-narrow">
-                    <h2 class="content-heading">ОСНОВНЫЕ НАСТРОЙКИ</h2>
+                <div class="content">
                     <div class="row">
                         <div class="col-xs-12">
                             
                             <div class="block">
                                 <div class="block-header">
-                                    <h3 class="block-title">Пользователи</h3>
+                                    <h3 class="block-title">Список пользователей</h3>
                                 </div>
                                 <div class="block-content">
-                                    <table class="table table-striped table-vcenter js-dataTable-full">
+                                    <table class="table table-striped table-vcenter js-dataTable-full users-table">
                                         <thead>
                                             <tr>
                                                 <th class="text-center" style="width: 50px;">#</th>
                                                 <th class="text-center" style="width: 120px;"><i class="si si-user"></i></th>
                                                 <th>Имя</th>
-                                                <th style="width: 100px;">Кол-во посещений</th>
-                                                <th style="width: 100px;">Дата ближайшего</th>
-                                                <th style="width: 100px;">Устройство</th>
+                                                <th style="width: 100px;">Посещений</th>
+                                                <th class="hidden-md hidden-sm hidden-xs" style="width: 100px;">
+                                                    Дата ближайшего
+                                                </th>
+                                                <th class="hidden-md hidden-sm hidden-xs" style="width: 100px;">
+                                                    Устройство
+                                                </th>
                                                 <th style="width: 100px;">Пост</th>
-                                                <th style="width: 100px;">Охват</th>
-                                                <th style="width: 100px;">Подписка</th>
+                                                <th class="hidden-sm hidden-xs" style="width: 100px;">
+                                                    Охват
+                                                </th>
+                                                <th class="hidden-xs" style="width: 100px;">
+                                                    Подписка
+                                                </th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td class="text-center">1</td>
+                                                <td class="text-center">2</td>
                                                 
                                                 <td>
                                                     <div class="nav-users">
@@ -360,22 +367,22 @@
                                                 <td>
                                                    555 
                                                 </td>
-                                                <td>
+                                                <td class="hidden-md hidden-sm hidden-xs">
                                                    15/07 
                                                 </td>
-                                                <td>
+                                                <td class="hidden-md hidden-sm hidden-xs">
                                                     
                                                 </td>
                                                 <td>
                                                     52
                                                 </td>
-                                                <td>
+                                                <td class="hidden-sm hidden-xs">
                                                     9000
                                                 </td>
-                                                <td class="text-center">
+                                                <td class="hidden-xs text-center">
                                                     
-                                                    <span class="css-input css-checkbox css-checkbox-success">
-                                                        <input class="hidden" type="checkbox" checked=""><span></span>
+                                                    <span class="label label-danger label--icon text-white ">
+                                                        <i class="fa fa-times"></i>
                                                     </span>
                                                     
                                                 </td>
@@ -395,22 +402,22 @@
                                                 <td>
                                                    555 
                                                 </td>
-                                                <td>
+                                                <td class="hidden-md hidden-sm hidden-xs">
                                                    15/07/2014 
                                                 </td>
-                                                <td>
+                                                <td class="hidden-md hidden-sm hidden-xs">
                                                     
                                                 </td>
                                                 <td>
                                                     52
                                                 </td>
-                                                <td>
+                                                <td class="hidden-sm hidden-xs">
                                                     9000
                                                 </td>
-                                                <td class="text-center">
+                                                <td class="hidden-xs text-center">
                                                     
-                                                    <span class="css-input css-checkbox css-checkbox-danger">
-                                                        <input class="hidden" type="checkbox" checked=""><span></span>
+                                                    <span class="label label-success label--icon text-white ">
+                                                        <i class="fa fa-check"></i>
                                                     </span>
                                                     
                                                 </td>
@@ -419,6 +426,26 @@
                                             
                                         </tbody>
                                     </table>
+                                    
+                                    <div class="hidden">
+                                        
+                                        <div id="users-dropdown" class="btn-group pull-right">
+                                            <button class="btn btn-default" type="button">Скачать</button>
+                                            <div class="btn-group">
+                                                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                    <li>
+                                                        <a tabindex="-1" href="javascript:void(0)">XLS (Excel)</a>
+                                                    </li>
+                                                    <li>
+                                                        <a tabindex="-1" href="javascript:void(0)">CVS</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             
@@ -436,11 +463,10 @@
             <!-- Footer -->
             <footer id="page-footer" class="content-mini content-mini-full font-s12 bg-gray-lighter clearfix">
                 <div class="pull-right">
-                    Crafted with <i class="fa fa-heart text-city"></i> by <a class="font-w600" href="http://goo.gl/vNS3I" target="_blank">pixelcave</a>
+                    <a class="font-w600" href="//www.hot-wifi.ru/" target="_blank">Hot-Wifi</a>
+                    &copy; <span class="js-year-copy"></span>
                 </div>
-                <div class="pull-left">
-                    <a class="font-w600" href="javascript:void(0)" target="_blank">OneUI 1.0</a> &copy; <span class="js-year-copy"></span>
-                </div>
+                
             </footer>
             <!-- END Footer -->
         </div>
