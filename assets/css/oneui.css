@@ -1,5 +1,5 @@
 /*!
-* OneUI - v1.0.0 - Auto-compiled on 2015-08-05 - Copyright 2015 
+* OneUI - v1.0.0 - Auto-compiled on 2015-08-07 - Copyright 2015 
 * @author pixelcave
 */
 /*
@@ -16909,6 +16909,34 @@ div.tagsinput span.tag a:hover {
 .placeholder {
   color: #aaa;
 }
+.bg-vk {
+  background-color: #6a97c5;
+  color: #fff;
+}
+.bg-fb {
+  background-color: #4a6292;
+  color: #fff;
+}
+.bg-twitter {
+  background-color: #35c4fc;
+  color: #fff;
+}
+.bg-instagram {
+  background-color: #c88d5a;
+  color: #fff;
+}
+.bg-ok {
+  background-color: #fd9c4d;
+  color: #fff;
+}
+.bg-pass {
+  background-color: #fff;
+  color: #545454;
+}
+.bg-sms {
+  background-color: #46c37b;
+  color: #fff;
+}
 .connected-today {
   max-height: 582px;
   overflow-y: auto;
@@ -16993,6 +17021,12 @@ div.tagsinput span.tag a:hover {
 .has-success .msg-success {
   display: block;
 }
+.charts-button {
+  cursor: pointer;
+}
+.charts-button:hover {
+  background: #000;
+}
 .hot-wifi-logo {
   display: inline-block;
   vertical-align: top;
@@ -17014,4 +17048,46 @@ div.tagsinput span.tag a:hover {
   width: 20px;
   height: 20px;
   line-height: 20px;
+}
+.auth-select .block-title {
+  margin-top: 6px;
+  font-size: 18px;
+}
+.auth-select .nav-tabs {
+  margin: -20px -20px 0;
+  min-width: 100%;
+  width: auto;
+  background-color: #f9f9f9;
+  border-bottom: none;
+}
+.auth-select .nav-tabs > li {
+  margin-bottom: 0;
+}
+.auth-select .nav-tabs > li a {
+  margin-right: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #646464;
+  font-weight: 600;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+.auth-select .nav-tabs > li.active a,
+.auth-select .nav-tabs > li.active a:hover,
+.auth-select .nav-tabs > li.active a:focus {
+  color: #646464;
+  background-color: #fff;
+  border-color: transparent !important;
+}
+.auth-select__item-header {
+  position: relative;
+  margin-bottom: 20px;
+  padding-right: 90px;
+  text-transform: uppercase;
+}
+.auth-select__item-header .switch {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  margin: -13px 0 0;
 }
